@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-size: 30px; color: black; font-weight: bold">XO BANK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+
+<li class="nav-item">
+    <a href="register" class="btn btn-light" style="padding-left: 20px; padding-right: 20px; margin-right: 10px;">REGISTER</a>
+</li>
+<li class="nav-item">
+    <a href="login" class="btn btn-light" style="padding-left: 20px; padding-right: 20px;">LOGIN </a>
+</li>
+
+          <div class="dropdown show" style="padding-left: 350px; padding-top: 10px; font-size: 17px;">
+  <div class="dropdown show" style="padding-left: 270px; padding-top: 10px; font-size: 17px; font-family: Arial, sans-serif;">
+        <select id="branches" onChange="window.location.href=this.value">
+          <option value="">BRANCHES</option>
+          <option value="https://en.wikipedia.org/wiki/Wayanad_district">Wayanad</option>
+          <option value="https://en.wikipedia.org/wiki/Kozhikode">Calicut</option>
+          <option value="https://en.wikipedia.org/wiki/Kannur">Kannur</option>
+          <option value="https://en.wikipedia.org/wiki/Kasaragod">Kasaragod</option>
+          <option value="https://en.wikipedia.org/wiki/Thrissur">Thrissur</option>
+        </select>
+      </div>
+
+</div>
+          </li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--<nav class="navbar  navbar-expand-lg bg-secondary">-->
+<!--  <div class="container-fluid">-->
+<!--    <a class="navbar-brand" href="#" style="font-size: 24px; color: black; ">MJ BANK</a>-->
+<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--      <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active" aria-current="page" href="login" class="btn btn-info" style="font-size: 19px; color: black; ">Login</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active" aria-current="page" href="register" class="btn btn-info" style="font-size: 19px; color: black; ">Register</a>-->
+<!--        </li>-->
+<!--          <div class="dropdown show" style="padding-left: 350px; padding-top: 10px; font-size: 25px;">-->
+<!--             <li class="nav-item dropdown">-->
+<!--                <a class="nav-link dropdown-toggle" href="#" style="font-size: 19px; color: black; " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Branches</a>-->
+<!--                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                         <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Malappuram" target="_blank">Malappuram</a>-->
+<!--                         <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Palakkad" target="_blank">Palakkad</a>-->
+<!--                         <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Kannur" target="_blank">Kannur</a>-->
+<!--                         <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Thrissur" target="_blank">Thrissur</a>-->
+<!--                         <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Ernakulam" target="_blank">Ernakulam</a>-->
+<!--                         </div>-->
+<!--        </li>-->
+<!--          </div>-->
+
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--</nav>-->
+
+<img class="my_image my_image_padding" src="{% static 'img/mm.jpg' %}" alt="img" style="width: 100%;" height="570px;">
+{% endblock %}
+
+
+
+
+
